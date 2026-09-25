@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-allen-brain",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Gene expression experiments and the brain structure ontology from the Allen Institute's Brain Atlas — where in the brain a gene is expressed.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-c58cb90fc19dd37bb82d739e7eed0aeff01fa6cc9299999cd56f40d35e79d476",
-    "sourceCommit": "60f04b68c347e970c6be94a53439d1364061fc06"
+    "sourceHash": "v1-72ba445841c483de2b387de3ecbf841a8566be04e75f8a0d0fddc6f9747cbe9a",
+    "sourceCommit": "dca20ba6e13a9aa1c9f2918fc2ddaffe4cc30e5c"
   }
 }
