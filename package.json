@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-allen-brain",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "Gene expression experiments and the brain structure ontology from the Allen Institute's Brain Atlas — where in the brain a gene is expressed.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-allen-brain": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "allen-brain"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-allen-brain.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/allen-brain",
   "pipeworx": {
-    "sourceHash": "v1-258afbfb2036972f897a40944f7d7b63c9447cf1b5e7d272b59eac7a51818a99",
-    "sourceCommit": "71f5325b13bb0ea0de2f0f7207885962ec91a484"
+    "mode": "gateway",
+    "slug": "allen-brain",
+    "gatewaySlug": "allen-brain",
+    "sourceHash": "v1-284293c4af30b0eda86fa4702e34aaaf9717b5e99d8efc05348e3bfd593a1587",
+    "sourceCommit": "c6136b81713e72ccb22977ca0c0cd981f8c3f081"
   }
 }
